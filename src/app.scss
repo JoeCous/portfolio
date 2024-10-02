@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+$font-stack: "Inter", "Helvetica", sans-serif;
+$primary-color: #00072d;
+
+body,
+html {
+  height: 100vh;
+  font-family: $font-stack;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.leftDiv {
+  margin-left: 7.5vw;
+  position: fixed;
+  color: white;
+}
+
+.rightDiv {
+  font-weight: 400;
+  position: relative;
+  color: lightgrey;
+  padding-left: 55vw;
+}
+
+h2 {
+  letter-spacing: -0.025rem;
+  font-weight: 700;
+  padding-top: 15vh;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.aboutTxt {
+  width: 27vw;
+  line-height: 1.625;
+}
+
+p {
+  width: 40vw;
+}
+
+.navItems {
+  padding-top: 5vh;
+  font-weight: 800;
+
+  p {
+    padding: 1.5vh;
+    font-size: 1.3rem;
+  }
+}
