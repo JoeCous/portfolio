@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.leftDiv {
+  margin-left: 7.5vw;
+  position: fixed;
+  color: white;
+}
+
+.rightDiv {
+  position: relative;
+  color: lightgrey;
+  margin-left: 55vw;
+}
+
+h2 {
+  letter-spacing: -0.025rem;
+  font-weight: 700;
+  padding-top: 15vh;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.aboutTxt {
+  width: 27vw;
+  line-height: 1.625;
+}
+
+p {
+  width: 40vw;
+}
+
+.navItems {
+  padding-top: 5vh;
+  font-weight: 800;
+
+  p {
+    padding: 1.5vh;
+    font-size: 1.3rem;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: #d3d3d3;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 17vw;;
+    height: 3.5vh;
+    font-size: 1rem;
+    margin-bottom: 5vh;
+    text-align: center;
+    line-height: 34px;
+  }
+
+  a:hover {
+    background-color: white;
+    color: #00072d;
+    font-weight: 600;
+  }
+}
+
+
+.logoContainer {
+  width: 20vw;
+  height: 5vh;
+  
+  img {
+    padding: 1vw;
+    object-fit: contain;
+    height: 100%;
+  }
+}

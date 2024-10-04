@@ -1,5 +1,5 @@
-import Main from "./Main.tsx";
-import About from "./about.tsx";
+import Main from "./components/main/main.tsx";
+import About from "./components/about/about.tsx";
 
 export default function App() {
   return (
