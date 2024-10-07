@@ -2,63 +2,48 @@ import "../about/about.scss";
 import github from "../../assets/github.svg"
 import linkedin from "../../assets/linkedin.svg"
 import instagram from "../../assets/instagram.svg"
+import resume from "../../assets/Resume.pdf"
 
-const para1 = "I've always had a passion for technology and I have previously worked as a Graphic Designer. Fast-forward to 2019 and I made the decision to make a career change. I quickly gained an interest in writing code and I haven't looked back since. I completed a two year Diploma with the BCS while working for one of the largest electrical retailers in the UK.";
-const para2 = "As a full stack developer I've had the opportunity to build backend services, APIs and user interfaces. Leveraging IaC tools like Terraform to deploy resources into AWS.";
-const para3 = "When I'm not at my computer I can be found running, a hobby I developed in 2018. Since then I've completed multiple Marathons and last year a 100k Ultra Marathon. My other hobbies include cycling, reading or listening to podcast.";
-const text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+import Experience from "../experience/experience.tsx"
+import Projects from "../projects/projects.tsx"
+
+const para1 = "I have a longstanding passion for technology, which initially led me to a career as a Graphic Designer. In 2019, I made the decision to transition my career toward software development, where I discovered a strong interest in coding that has since fueled my professional journey. I completed a two-year diploma with the British Computer Society while employed at one of the largest electrical retailers in the UK.";
+const para2 = "As a Full Stack Developer, I have gained extensive experience in building backend services, APIs, and user interfaces. Utilizing Infrastructure as Code (IaC) tools, such as Terraform, to effectively deploy resources within AWS.";
+const para3 = "When I am not working at my computer, I enjoy running, a hobby I took up in 2018. Since then, I have completed multiple marathons, including a 100k ultramarathon last year. Additionally, I enjoy cycling, reading, and listening to podcasts.";
 
 export default function About() {
   return (
     <>
       <div className="container">
         <div className="leftDiv">
-          <h2>Joe Coucill</h2>
-          <h4>Full Stack Software Developer</h4>
+          <h1>Joe Coucill</h1>
+          <h3>Full Stack Software Developer</h3>
           <br></br>
           <div className="navItems">
-            <a href="#About">ABOUT</a>
-            <a href="#Experience">EXPERIENCE</a>
-            <a href="#Projects">PROJECTS</a>
-            <a href="Resume">DOWNLOAD RESUME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#experience">EXPERIENCE</a>
+            <a href="#projects">PROJECTS</a>
+            <a href={resume} target = "_blank">RESUME</a>
+            </div>
 
             <div className="logoContainer">
-            <img src={github}></img>
-            <img src={linkedin}></img>
-            <img src={instagram}></img>
+            <a href="https://github.com/JoeCous" target="_blank"><img src={github}></img></a>
+            <a href="https://www.linkedin.com/in/joe-coucill-036225187/" target="_blank"><img src={linkedin}></img></a>
+            <a href="https://www.instagram.com/joecous/" target="_blank"><img src={instagram}></img></a>
             </div>
-          </div>
+          
         </div>
 
         <div className="rightDiv">
-        <h2>About Me</h2>
-        <div id="About">  
+        <div id="about">  
+        <h2>ABOUT</h2>
+        <hr></hr>
           <p className="aboutTxt">{para1}</p>
           <p className="aboutTxt">{para2}</p>
           <p className="aboutTxt">{para3}</p>
         </div>
-
-        <hr></hr>
-        
-        <div id="Experience">
-          <h2>Experience</h2>
-          <h4>ao.com</h4>
-          <p className="aboutTxt">{text}</p>
-          <p className="aboutTxt">{text}</p>
-          <p className="aboutTxt">{text}</p>
-          <br></br>
-        </div>
-
-        <hr></hr>
-
-        <div id="Projects">
-          <h2>Projects</h2>
-          <h4>Kavi Reserve Whisky</h4>
-          <p className="aboutTxt">{text}</p>
-          <p className="aboutTxt">{text}</p>
-          <p className="aboutTxt">{text}</p>
-          <br></br>
-        </div>
+        <Experience/> 
+        <Projects/>
         </div>
       </div>
     </>

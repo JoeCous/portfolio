@@ -1,10 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+$navy: #00072d;
+$dark-blue: #132e48;
+$teal: #52cdce;
+$light-grey: #d3d3d3;
 $font-stack: "Inter", "Helvetica", sans-serif;
-$primary-color: #00072d;
 
 body,
 html {
   height: 100vh;
   font-family: $font-stack;
 }
+
+hr {
+  float: left;
+  width: 60%;
+  margin-bottom: 4%;
+}
+
+h1 {
+  color: white;
+  letter-spacing: -0.025rem;
+  font-weight: 700;
+  padding-top: 15vh;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+h2 {
+  color: white;
+  font-size: 1.2rem;
+}
+
+h3 {
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 4%;
+  margin-bottom: 0;
+  font-weight: 800;
+}
+

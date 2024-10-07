@@ -1,83 +1,133 @@
 .container {
-  display: flex;
   width: 100vw;
   height: 100vh;
+
+  .leftDiv {
+    margin-left: 7.5vw;
+    position: fixed;
+    color: white;
+  }
+
+  .rightDiv {
+    position: relative;
+    color: #d3d3d3;
+    margin-left: 55vw;
+  }
 }
 
-.leftDiv {
-  margin-left: 7.5vw;
-  position: fixed;
-  color: white;
-}
+  .navItems {
+    padding-top: 5vh;
+    font-weight: 800;
+  
+    p {
+      padding: 1.5vh;
+      font-size: 1.3rem;
+    }
+  
+    a {
+      display: block;
+      text-decoration: none;
+      color: #d3d3d3;
+      background-color: transparent;
+      border: 2px solid white;
+      border-radius: 20px;
+      width: 17vw;;
+      font-size: 1rem;
+      margin-bottom: 5vh;
+      text-align: center;
+      line-height: 34px;
+    }
+  
+    a:hover {
+      background-color: white;
+      color: #00072d;
+      font-weight: 600;
+    }
+  }
 
-.rightDiv {
-  position: relative;
-  color: lightgrey;
-  margin-left: 55vw;
-}
+  .logoContainer {
+    width: 20vw;
+    height: 5vh;
+    
+    img {
+      padding: 1vw;
+      object-fit: contain;
+      height: 100%;
+    }
+  }
 
-h2 {
-  letter-spacing: -0.025rem;
-  font-weight: 700;
-  padding-top: 15vh;
-  font-size: 2.5rem;
-  margin: 0;
-}
-
-h4 {
-  font-size: 1.5rem;
-  margin: 0;
-  font-weight: 500;
-}
+  #about {
+    padding-top: 15vh;
+    padding-bottom: 7%;
+  }
 
 .aboutTxt {
-  width: 27vw;
+  width: 25vw;
   line-height: 1.625;
 }
 
-p {
-  width: 40vw;
-}
+//Mobile
 
-.navItems {
-  padding-top: 5vh;
-  font-weight: 800;
+@media (max-width: 767px) {
+  .container{
+    .leftDiv {
+      position: relative;
+    }
 
-  p {
-    padding: 1.5vh;
-    font-size: 1.3rem;
+    .rightDiv {
+      margin-left: 7.5vw;
+    } 
   }
-
-  a {
-    display: block;
-    text-decoration: none;
-    color: #d3d3d3;
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 20px;
-    width: 17vw;;
-    height: 3.5vh;
-    font-size: 1rem;
-    margin-bottom: 5vh;
-    text-align: center;
-    line-height: 34px;
-  }
-
-  a:hover {
-    background-color: white;
-    color: #00072d;
-    font-weight: 600;
-  }
-}
-
-
-.logoContainer {
-  width: 20vw;
-  height: 5vh;
+    
+  .navItems {
+    font-weight: 800;
+    padding-top: 0;
   
-  img {
-    padding: 1vw;
-    object-fit: contain;
-    height: 100%;
+    p {
+      padding: 2vh;
+      font-size: 1.3rem;
+    }
+  
+    a {
+      padding: 8px;
+      display: inline;
+      width: 90%;
+      height: 5.5vh;
+      font-size: 0.9rem;
+      margin-right: 4%;
+    }
+
+    .logoContainer {
+      margin-top: 2vh;
+      width: 40vw;
+      height: 3.5vh;
+      
+      img {
+        padding: 1vw;
+        object-fit: contain;
+        height: 100%;
+      }
+    }  
   }
+
+  h1 {
+    letter-spacing: -0.025rem;
+    font-weight: 700;
+    padding-top: 10vh;
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .aboutTxt {
+    width: 85vw;
+    line-height: 1.625;
+  }
+  }
+
+@media (min-width: 768px) and (max-width: 1023px) {
 }
