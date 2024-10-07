@@ -1,22 +1,28 @@
+@use '../../variables';
+
+.projectTitle {
+    margin-top: 6%;
+}
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
-.kaviText {
-    width: 25vw;
-    line-height: 1.625;
-    margin-bottom: 4%;
+.kavi, .jackieApp {
+    @include variables.boxStyle;
 }
 
-.kavi:hover {
-    border-radius: 20px;
-    background-color: rgba(94, 234, 212, 0.2);
+.kavi:hover, .jackieApp:hover {
+    @include variables.boxHover;
   }
 
-  .kavi {
-    margin-bottom: 10%;
-    width: 27vw;
-    padding: 20px;
-}
 
+  @media (max-width: 1025px) {
+    .kavi, .jackieApp {
+      width: 80%;
+      padding: 0;
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
+  }

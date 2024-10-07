@@ -1,20 +1,18 @@
 import "../projects/projects.scss";
 
-
 const kaviText = "Develop, deploy, and maintain the Kavi website, which showcases Kavi, a locally produced coffee-flavored Canadian whisky crafted in Ontario.";
 
 export default function Projects() {
     return (
       <>
       <div id="projects">
-        <h2>PROJECTS</h2>
-        <hr></hr>
-        <br></br>
+      <br></br>
+        <h2 className="projectTitle">PROJECTS</h2>
       <a href="https://www.kaviwhisky.com" target = "_blank">
         <div className="kavi">
           <h3>Kavi Reserve Whisky</h3>
-          <p>2024</p>
-          <p className="kaviText">{kaviText}</p>
+          <p className="date">2024</p>
+          <p className="textBlock">{kaviText}</p>
 
         <div className="skills">
           <span>React</span>
@@ -25,9 +23,18 @@ export default function Projects() {
         </div>
         </div>
         </a>
-        <br></br>
-        <br></br>
-        <br></br>
+  
+        <div className="jackieApp">
+          <h3>Jackie.App</h3>
+          <p className="date">2024</p>
+          <p className="textBlock">{kaviText}</p>
+
+        <div className="skills">
+          <span>Angular</span>
+          <span>Typescript</span>
+          <span>Vercel</span>
+        </div>
+        </div>
         </div>
       </>
     );

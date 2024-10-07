@@ -1,0 +1,28 @@
+$navy: #00072d;
+$dark-blue: #132e48;
+$teal: #52cdce;
+$light-grey: #d3d3d3;
+$font-stack: "Inter", "Helvetica", sans-serif;
+$bold-text: 800;
+
+  
+@mixin boxStyle() {
+    width: 27vw;
+    padding: 20px;
+    margin-bottom: 2%;
+}
+
+@mixin boxHover() {
+    border-radius: 20px;
+    background-color: rgba(94, 234, 212, 0.1);
+}
+
+@mixin skillStyle {
+    background-color: $dark-blue;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-right: 2%;
+    color: $teal;
+    padding: 8px;
+    border-radius: 15px;
+}

@@ -38,9 +38,10 @@ export default function About() {
         <div id="about">  
         <h2>ABOUT</h2>
         <hr></hr>
-          <p className="aboutTxt">{para1}</p>
-          <p className="aboutTxt">{para2}</p>
-          <p className="aboutTxt">{para3}</p>
+        <br></br>
+          <p className="textBlock">{para1}</p>
+          <p className="textBlock">{para2}</p>
+          <p className="textBlock">{para3}</p>
         </div>
         <Experience/> 
         <Projects/>

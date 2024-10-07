@@ -7,20 +7,18 @@ export default function Experience() {
   return (
     <>
       <div id="experience">
-        <h2>EXPERIENCE</h2>
-        <hr></hr>
         <br></br>
+        <h2>EXPERIENCE</h2>
         <a href="https://www.ao.com" target = "_blank">
         <div className="ao">
         <h3>Software Developer - ao.com</h3>
         <p className="date">2019-2024</p>
-        <p className="aoText">{aoText}</p>
+        <p className="textBlock">{aoText}</p>
         <div className="skills">
           <span>C#</span>
           <span>.NET</span>
           <span>AWS</span>
           <span>Terraform</span>
-          <span>Docker</span>
           <span>React</span>
           <span>Javascript</span>
         </div>
@@ -31,7 +29,7 @@ export default function Experience() {
       <div className="thinkPrint">
         <h3>Graphic Designer - Think Print</h3>
         <p className="date">2009-2015</p>
-        <p className="thinkPrintText">{thinkPrintText}</p>
+        <p className="textBlock">{thinkPrintText}</p>
         <div className="skills">
           <span>Photoshop</span>
           <span>Illustrator</span>

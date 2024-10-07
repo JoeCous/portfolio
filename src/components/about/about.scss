@@ -1,3 +1,5 @@
+@use '../../variables';
+
 .container {
   width: 100vw;
   height: 100vh;
@@ -6,17 +8,26 @@
     margin-left: 7.5vw;
     position: fixed;
     color: white;
+
+    h3 {
+      font-weight: 400;
+    }
   }
 
   .rightDiv {
     position: relative;
-    color: #d3d3d3;
+    color: variables.$light-grey;
     margin-left: 55vw;
   }
 }
 
+#about {
+  padding-top: 15vh;
+  padding-bottom: 7%;
+}
+
   .navItems {
-    padding-top: 5vh;
+    padding-top: 3%;
     font-weight: 800;
   
     p {
@@ -27,7 +38,7 @@
     a {
       display: block;
       text-decoration: none;
-      color: #d3d3d3;
+      color: variables.$light-grey;
       background-color: transparent;
       border: 2px solid white;
       border-radius: 20px;
@@ -40,35 +51,31 @@
   
     a:hover {
       background-color: white;
-      color: #00072d;
+      color: variables.$navy;
       font-weight: 600;
     }
   }
 
   .logoContainer {
     width: 20vw;
-    height: 5vh;
+    height: 4vh;
     
     img {
-      padding: 1vw;
+      padding: 0.8vw;
       object-fit: contain;
       height: 100%;
     }
   }
 
-  #about {
-    padding-top: 15vh;
-    padding-bottom: 7%;
-  }
-
-.aboutTxt {
-  width: 25vw;
-  line-height: 1.625;
-}
-
 //Mobile
 
-@media (max-width: 767px) {
+@media (max-width: 1025px) {
+
+  #about {
+    padding-top: 5vh;
+    padding-bottom: 2%;
+}
+
   .container{
     .leftDiv {
       position: relative;
@@ -80,54 +87,31 @@
   }
     
   .navItems {
-    font-weight: 800;
+    font-weight: 600;
     padding-top: 0;
   
-    p {
-      padding: 2vh;
-      font-size: 1.3rem;
-    }
-  
     a {
-      padding: 8px;
+      padding: 1.5%;
       display: inline;
-      width: 90%;
-      height: 5.5vh;
-      font-size: 0.9rem;
-      margin-right: 4%;
+      font-size: 0.7rem;
+      margin-right: 3%;
+      border: 1.7px solid white;
     }
-
-    .logoContainer {
-      margin-top: 2vh;
-      width: 40vw;
-      height: 3.5vh;
-      
-      img {
-        padding: 1vw;
-        object-fit: contain;
-        height: 100%;
-      }
-    }  
   }
 
-  h1 {
-    letter-spacing: -0.025rem;
-    font-weight: 700;
-    padding-top: 10vh;
-    font-size: 2rem;
-  }
-  
-  h3 {
-    font-size: 1.3rem;
-    margin: 0;
-    font-weight: 500;
+  .logoContainer {
+    margin-top: 2vh;
+    width: 75vw;
+    height: 2.5vh;
+    
+    img {
+      padding: 1vw;
+      object-fit: contain;
+      height: 100%;
+    }
+  }  
   }
 
-  .aboutTxt {
-    width: 85vw;
-    line-height: 1.625;
-  }
-  }
 
 @media (min-width: 768px) and (max-width: 1023px) {
 }
