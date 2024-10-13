@@ -9,11 +9,11 @@ a {
     color: inherit;
 }
 
-.kavi, .jackieApp {
+.kavi {
     @include variables.boxStyle;
 }
 
-.kavi:hover, .jackieApp:hover {
+.kavi:hover {
     @include variables.boxHover;
   }
 

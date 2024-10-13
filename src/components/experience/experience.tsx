@@ -8,11 +8,12 @@ export default function Experience() {
     <>
       <div id="experience">
         <br></br>
-        <h2>EXPERIENCE</h2>
         <a href="https://www.ao.com" target = "_blank">
         <div className="ao">
+          <div className="heading">
         <h3>Software Developer - ao.com</h3>
         <p className="date">2019-2024</p>
+        </div>
         <p className="textBlock">{aoText}</p>
         <div className="skills">
           <span>C#</span>

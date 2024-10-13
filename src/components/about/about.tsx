@@ -35,15 +35,15 @@ export default function About() {
         </div>
 
         <div className="rightDiv">
-        <div id="about">  
-        <h2>ABOUT</h2>
-        <hr></hr>
+        <div id="about"> 
         <br></br>
           <p className="textBlock">{para1}</p>
           <p className="textBlock">{para2}</p>
           <p className="textBlock">{para3}</p>
         </div>
+        <hr></hr>
         <Experience/> 
+        <hr></hr>
         <Projects/>
         </div>
       </div>
