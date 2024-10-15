@@ -46,10 +46,15 @@ h3 {
 
 .skills {
   font-size: 15px;
+  margin-top: 7.5%;
 
   span {
     @include variables.skillStyle;
   }
+}
+
+#projects {
+  margin-bottom: 5%;
 }
 
 //Mobile
@@ -60,9 +65,7 @@ h3 {
   }
 
   h2 {
-    padding-top: 5%;
-    margin-bottom: 0;
-    padding-left: 0;
+    padding: 0;
   }
   
   h3 {
@@ -78,12 +81,10 @@ h3 {
 
   .skills {  
     margin-top: 10%;
-    font-size: 14px;
+    font-size: 12px;
+  }
+
+  #about, #experience, #projects {
+    margin-bottom: 15%;
   }
 }
-
-//Tablet
-@media (max-width: 1023px) and (min-height: 900px) {
-
-}
-
