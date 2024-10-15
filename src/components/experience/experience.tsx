@@ -7,7 +7,7 @@ export default function Experience() {
   return (
     <>
       <div id="experience">
-        <br></br>
+      <h2 className="experienceTitle">EXPERIENCE</h2>
         <a href="https://www.ao.com" target = "_blank">
         <div className="ao">
           <div className="heading">
@@ -17,7 +17,6 @@ export default function Experience() {
         <p className="textBlock">{aoText}</p>
         <div className="skills">
           <span>C#</span>
-          <span>.NET</span>
           <span>AWS</span>
           <span>Terraform</span>
           <span>React</span>

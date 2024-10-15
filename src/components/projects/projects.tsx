@@ -6,7 +6,7 @@ export default function Projects() {
     return (
       <>
       <div id="projects">
-      <br></br>
+      <h2 className="projectsTitle">PROJECTS</h2>
       <a href="https://www.kaviwhisky.com" target = "_blank">
         <div className="kavi">
           <h3>Kavi Reserve Whisky</h3>

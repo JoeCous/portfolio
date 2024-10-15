@@ -36,14 +36,12 @@ export default function About() {
 
         <div className="rightDiv">
         <div id="about"> 
-        <br></br>
+        <h2 className="aboutTitle">ABOUT</h2>
           <p className="textBlock">{para1}</p>
           <p className="textBlock">{para2}</p>
           <p className="textBlock">{para3}</p>
         </div>
-        <hr></hr>
         <Experience/> 
-        <hr></hr>
         <Projects/>
         </div>
       </div>
