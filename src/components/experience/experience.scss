@@ -4,9 +4,11 @@
   @include variables.boxStyle
 }
 
+@media (min-width: 1250px) {
   .ao:hover, .thinkPrint:hover {
     @include variables.boxHover;
   }
+}
 
   @media (max-width: 1023px) {
     .ao, .thinkPrint {

@@ -7,9 +7,9 @@ import resume from "../../assets/Resume.pdf"
 import Experience from "../experience/experience.tsx"
 import Projects from "../projects/projects.tsx"
 
-const para1 = "I have a longstanding passion for technology, which initially led me to a career as a Graphic Designer. In 2019, I made the decision to transition my career toward software development, where I discovered a strong interest in coding that has since fueled my professional journey. I completed a two-year diploma with the British Computer Society while employed at one of the largest electrical retailers in the UK.";
+const para1 ="I have a longstanding passion for technology that initially guided me to a career as a Graphic Designer, where I utilized the Adobe Creative Suite. In 2019, I began exploring coding and the fundamentals of web development, which inspired me to transition my career toward software development. I discovered a strong interest in coding that has since fueled my professional journey. I completed a two-year diploma with the British Computer Society while employed at one of the largest electrical retailers in the UK."
 const para2 = "As a Full Stack Developer, I have gained extensive experience in building backend services, APIs, and user interfaces. Utilizing Infrastructure as Code (IaC) tools, such as Terraform, to effectively deploy resources within AWS.";
-const para3 = "When I am not working at my computer, I enjoy running, a hobby I took up in 2018. Since then, I have completed multiple marathons, including a 100k ultramarathon last year. Additionally, I enjoy cycling, reading, and listening to podcasts.";
+const para3 = "When I am not working at my computer, I enjoy running, a hobby I took up in 2018. Since then, I have completed several marathons, including a 100K ultramarathon last year. While I enjoy running to keep fit, my motivation for the ultramarathon was to challenge my limits, given I had only recently taken up running. Additionally, I enjoy cycling, reading, and listening to podcasts."
 
 export default function About() {
   return (
